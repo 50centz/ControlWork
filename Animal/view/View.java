@@ -16,4 +16,6 @@ public class View {
         ShowCommand showCommand = new ShowCommand();
         showCommand.show(array);
     }
+
+    
 }
