@@ -16,13 +16,24 @@ public class Presenter {
         return array;
     }
 
-    public ArrayList<String> (){
+    public void createAnimal(int choice){
         
         Model model = new Model();
 
+        model.createAnimal(choice);
+    }
+
+    public ArrayList<String> showCommand(int choice){
+        
+        Model model = new Model();
         ArrayList<String> array = new ArrayList<>();
 
-        array = model.showAnimal();
+        array = model.showCommand(choice);
         return array;
+    }
+
+    public void addCommand(int choice, String command){
+        Model model = new Model();
+        model.addCommand(choice, command);
     }
 }

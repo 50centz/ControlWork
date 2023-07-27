@@ -1,13 +1,12 @@
 package view;
 
-import java.util.Scanner;
+
 
 
 public class Start {
     
-    Scanner scanner = new Scanner(System.in);
-
-    public void start(){
+    Number number = new Number();
+    public void start() throws InvalidInputException{
 
         boolean start = true;
 
@@ -15,17 +14,20 @@ public class Start {
             View view = new View();
             view.start();
 
-            int choice = scanner.nextInt();
+            int choice = number.getChoice();
+            
 
             if(choice == 1){
                 CreateAnimal createAnimal = new CreateAnimal();
                 createAnimal.start();
             }
             if(choice == 2){
-
+                ListCommand listCommand = new ListCommand();
+                listCommand.showCommand();
             }
             if(choice == 3){
-
+                AddCommand addCommand = new AddCommand();
+                addCommand.add();
             }
             if(choice == 4){
                 start = false;

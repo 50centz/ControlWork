@@ -1,6 +1,6 @@
 package model;
 
 public abstract class Animal {
-    
-    public void ShowCommand(){}
+       
+    public void showCommand(){}
 }
