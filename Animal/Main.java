@@ -4,12 +4,11 @@ import model.Dog;
 import model.Donkeys;
 import model.Hamsters;
 import model.Horse;
-import view.InvalidInputException;
 import view.Start;
 
 public class Main {
   
-    public static void main(String[] args) throws InvalidInputException {
+    public static void main(String[] args) throws Exception {
 
         Cat cat = new Cat();
         cat.showCommand();
